@@ -10,7 +10,7 @@ args.forEach(function (val, index, array) {
     height: 1080
     })
     await page.goto('https://instantlandpages.com/page/' + val);
-    await page.screenshot({path: 'screenshots/' + val + '.jpg'});
+    await page.screenshot({path: 'screenshots/' + val + '.jpg', fullPage: true});
 
     await browser.close();
   })();
